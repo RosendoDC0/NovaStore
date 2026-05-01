@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: '/NOMBRE-DEL-REPO/'
+    baseURL: '/NovaStore/'
   },
   nitro: {
     preset: 'github_pages'
