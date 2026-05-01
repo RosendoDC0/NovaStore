@@ -1,0 +1,399 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nova Store — Tienda Online</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" type="text/css" crossorigin="anonymous" data-hid="mdi"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><style>.main-bg[data-v-946da73e]{background:linear-gradient(180deg,#f0f1ff,#f8f9fb 120px);font-family:Inter,sans-serif;min-height:100vh}.hero[data-v-946da73e]{padding:20px 0;text-align:center}.hero-eyebrow[data-v-946da73e]{color:#7e57c2;font-size:.875rem;font-weight:600;letter-spacing:.5px;margin:0 0 12px;text-transform:uppercase}.hero-title[data-v-946da73e]{color:#1a1a2e;font-size:clamp(2rem,5vw,3rem);font-weight:800;letter-spacing:-1px;line-height:1.15;margin:0 0 16px}.hero-subtitle[data-v-946da73e]{color:#666;font-size:1rem;line-height:1.6;margin:0;margin-inline:auto;max-width:480px}.filters[data-v-946da73e]{display:flex;flex-wrap:wrap;gap:4px}[data-v-946da73e] .filter-active{background:#5c6bc0!important;color:#fff!important}</style><style>.app-header[data-v-e8744c65]{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);background:#ffffffeb!important}.header-title[data-v-e8744c65]{align-items:center;display:flex;gap:10px}.store-name[data-v-e8744c65]{background:linear-gradient(135deg,#5c6bc0,#7e57c2);-webkit-background-clip:text;font-size:1.25rem;font-weight:700;letter-spacing:-.5px;-webkit-text-fill-color:transparent;background-clip:text}</style><style>.cart-drawer[data-v-292de849]{display:flex;flex-direction:column}.drawer-header[data-v-292de849]{flex-shrink:0;justify-content:space-between;padding:16px 20px}.drawer-header[data-v-292de849],.drawer-title[data-v-292de849]{align-items:center;display:flex}.drawer-title[data-v-292de849]{color:#1a1a2e;font-size:1.1rem;font-weight:700}.empty-cart[data-v-292de849]{align-items:center;display:flex;flex:1;flex-direction:column;justify-content:center;padding:48px 24px;text-align:center}.empty-icon[data-v-292de849]{margin-bottom:20px}.empty-title[data-v-292de849]{color:#1a1a2e;font-size:1.1rem;font-weight:600;margin:0 0 8px}.empty-subtitle[data-v-292de849]{color:#888;font-size:.875rem;margin:0}.items-scroll[data-v-292de849]{flex:1;overflow-x:hidden;overflow-y:auto}.items-list[data-v-292de849]{padding-bottom:8px}.drawer-footer[data-v-292de849]{background:#fafafa;flex-shrink:0;padding:20px}.shipping-row[data-v-292de849],.subtotal-row[data-v-292de849],.total-row[data-v-292de849]{align-items:center;color:#444;display:flex;font-size:.9rem;justify-content:space-between;margin-bottom:6px}.subtotal-label[data-v-292de849]{color:#666}.shipping-free[data-v-292de849],.subtotal-value[data-v-292de849]{font-weight:600}.shipping-free[data-v-292de849]{color:#43a047}.total-row[data-v-292de849]{color:#1a1a2e;font-size:1.1rem;font-weight:700}.total-price[data-v-292de849]{color:#5c6bc0;font-size:1.3rem;font-weight:800}.checkout-btn[data-v-292de849]{background:linear-gradient(135deg,#5c6bc0,#7e57c2)!important;font-weight:600;height:52px!important;letter-spacing:.5px}</style><style>.product-card[data-v-cfb8efbc]{border:1px solid rgba(0,0,0,.06)!important;overflow:hidden}.product-card[data-v-cfb8efbc]:hover{box-shadow:0 4px 12px #00000014!important}.card-body[data-v-cfb8efbc]{padding:16px!important}.product-meta[data-v-cfb8efbc]{margin-bottom:14px}.product-name[data-v-cfb8efbc]{color:#1a1a2e;font-size:.95rem;font-weight:700;line-height:1.3;margin:0 0 4px}.product-description[data-v-cfb8efbc]{color:#999;display:-webkit-box;font-size:.78rem;-webkit-line-clamp:2;line-height:1.4;margin:0;-webkit-box-orient:vertical;overflow:hidden}.card-footer[data-v-cfb8efbc]{align-items:center;display:flex;gap:8px;justify-content:space-between}.product-price[data-v-cfb8efbc]{color:#5c6bc0;font-size:1.15rem;font-weight:800}.add-btn[data-v-cfb8efbc]{font-size:.8rem;font-weight:600}</style><link rel="stylesheet" href="/NOMBRE-DEL-REPO/_nuxt/entry.DJMbLRq8.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/NOMBRE-DEL-REPO/_payload.json?cadc889e-8016-4086-a8e4-2a923e0bc8d2"><link rel="modulepreload" as="script" crossorigin href="/NOMBRE-DEL-REPO/_nuxt/CdQI2e4F.js"><link rel="modulepreload" as="script" crossorigin href="/NOMBRE-DEL-REPO/_nuxt/Cfa-uvaC.js"><script type="module" src="/NOMBRE-DEL-REPO/_nuxt/CdQI2e4F.js" crossorigin></script><meta name="description" content="Descubre nuestra colección de productos premium con envío gratis."></head><body><style id="vuetify-theme-stylesheet">@layer vuetify-utilities {
+  @layer theme-base {
+  :root {
+    --v-theme-background: 248,249,251;
+    --v-theme-background-overlay-multiplier: 1;
+    --v-theme-surface: 255,255,255;
+    --v-theme-surface-overlay-multiplier: 1;
+    --v-theme-surface-bright: 255,255,255;
+    --v-theme-surface-bright-overlay-multiplier: 1;
+    --v-theme-surface-light: 238,238,238;
+    --v-theme-surface-light-overlay-multiplier: 1;
+    --v-theme-surface-variant: 66,66,66;
+    --v-theme-surface-variant-overlay-multiplier: 2;
+    --v-theme-on-surface-variant: 238,238,238;
+    --v-theme-primary: 92,107,192;
+    --v-theme-primary-overlay-multiplier: 2;
+    --v-theme-primary-darken-1: 31,85,146;
+    --v-theme-primary-darken-1-overlay-multiplier: 2;
+    --v-theme-secondary: 126,87,194;
+    --v-theme-secondary-overlay-multiplier: 2;
+    --v-theme-secondary-darken-1: 1,135,134;
+    --v-theme-secondary-darken-1-overlay-multiplier: 1;
+    --v-theme-error: 176,0,32;
+    --v-theme-error-overlay-multiplier: 2;
+    --v-theme-info: 33,150,243;
+    --v-theme-info-overlay-multiplier: 1;
+    --v-theme-success: 76,175,80;
+    --v-theme-success-overlay-multiplier: 1;
+    --v-theme-warning: 251,140,0;
+    --v-theme-warning-overlay-multiplier: 1;
+    --v-theme-accent: 255,112,67;
+    --v-theme-accent-overlay-multiplier: 1;
+    --v-theme-on-primary: 255,255,255;
+    --v-theme-on-background: 0,0,0;
+    --v-theme-on-surface: 0,0,0;
+    --v-theme-on-surface-bright: 0,0,0;
+    --v-theme-on-surface-light: 0,0,0;
+    --v-theme-on-primary-darken-1: 255,255,255;
+    --v-theme-on-secondary: 255,255,255;
+    --v-theme-on-secondary-darken-1: 255,255,255;
+    --v-theme-on-error: 255,255,255;
+    --v-theme-on-info: 255,255,255;
+    --v-theme-on-success: 255,255,255;
+    --v-theme-on-warning: 255,255,255;
+    --v-theme-on-accent: 255,255,255;
+    --v-border-color: 0, 0, 0;
+    --v-border-opacity: 0.12;
+    --v-shadow-color: 0, 0, 0;
+    --v-high-emphasis-opacity: 0.87;
+    --v-medium-emphasis-opacity: 0.6;
+    --v-disabled-opacity: 0.38;
+    --v-idle-opacity: 0.04;
+    --v-hover-opacity: 0.04;
+    --v-focus-opacity: 0.12;
+    --v-selected-opacity: 0.08;
+    --v-activated-opacity: 0.12;
+    --v-pressed-opacity: 0.12;
+    --v-dragged-opacity: 0.08;
+    --v-theme-kbd: 238, 238, 238;
+    --v-theme-on-kbd: 0, 0, 0;
+    --v-theme-code: 245, 245, 245;
+    --v-theme-on-code: 0, 0, 0;
+    --v-theme-on-dark: 255, 255, 255;
+    --v-theme-on-light: 0, 0, 0;
+    --v-elevation-overlay-color: black;
+    --v-elevation-overlay-opacity-step: 2%;
+  }
+  .v-theme--light {
+    color-scheme: normal;
+    --v-theme-background: 248,249,251;
+    --v-theme-background-overlay-multiplier: 1;
+    --v-theme-surface: 255,255,255;
+    --v-theme-surface-overlay-multiplier: 1;
+    --v-theme-surface-bright: 255,255,255;
+    --v-theme-surface-bright-overlay-multiplier: 1;
+    --v-theme-surface-light: 238,238,238;
+    --v-theme-surface-light-overlay-multiplier: 1;
+    --v-theme-surface-variant: 66,66,66;
+    --v-theme-surface-variant-overlay-multiplier: 2;
+    --v-theme-on-surface-variant: 238,238,238;
+    --v-theme-primary: 92,107,192;
+    --v-theme-primary-overlay-multiplier: 2;
+    --v-theme-primary-darken-1: 31,85,146;
+    --v-theme-primary-darken-1-overlay-multiplier: 2;
+    --v-theme-secondary: 126,87,194;
+    --v-theme-secondary-overlay-multiplier: 2;
+    --v-theme-secondary-darken-1: 1,135,134;
+    --v-theme-secondary-darken-1-overlay-multiplier: 1;
+    --v-theme-error: 176,0,32;
+    --v-theme-error-overlay-multiplier: 2;
+    --v-theme-info: 33,150,243;
+    --v-theme-info-overlay-multiplier: 1;
+    --v-theme-success: 76,175,80;
+    --v-theme-success-overlay-multiplier: 1;
+    --v-theme-warning: 251,140,0;
+    --v-theme-warning-overlay-multiplier: 1;
+    --v-theme-accent: 255,112,67;
+    --v-theme-accent-overlay-multiplier: 1;
+    --v-theme-on-primary: 255,255,255;
+    --v-theme-on-background: 0,0,0;
+    --v-theme-on-surface: 0,0,0;
+    --v-theme-on-surface-bright: 0,0,0;
+    --v-theme-on-surface-light: 0,0,0;
+    --v-theme-on-primary-darken-1: 255,255,255;
+    --v-theme-on-secondary: 255,255,255;
+    --v-theme-on-secondary-darken-1: 255,255,255;
+    --v-theme-on-error: 255,255,255;
+    --v-theme-on-info: 255,255,255;
+    --v-theme-on-success: 255,255,255;
+    --v-theme-on-warning: 255,255,255;
+    --v-theme-on-accent: 255,255,255;
+    --v-border-color: 0, 0, 0;
+    --v-border-opacity: 0.12;
+    --v-shadow-color: 0, 0, 0;
+    --v-high-emphasis-opacity: 0.87;
+    --v-medium-emphasis-opacity: 0.6;
+    --v-disabled-opacity: 0.38;
+    --v-idle-opacity: 0.04;
+    --v-hover-opacity: 0.04;
+    --v-focus-opacity: 0.12;
+    --v-selected-opacity: 0.08;
+    --v-activated-opacity: 0.12;
+    --v-pressed-opacity: 0.12;
+    --v-dragged-opacity: 0.08;
+    --v-theme-kbd: 238, 238, 238;
+    --v-theme-on-kbd: 0, 0, 0;
+    --v-theme-code: 245, 245, 245;
+    --v-theme-on-code: 0, 0, 0;
+    --v-theme-on-dark: 255, 255, 255;
+    --v-theme-on-light: 0, 0, 0;
+    --v-elevation-overlay-color: black;
+    --v-elevation-overlay-opacity-step: 2%;
+  }
+  .v-theme--dark {
+    color-scheme: dark;
+    --v-theme-background: 18,18,18;
+    --v-theme-background-overlay-multiplier: 1;
+    --v-theme-surface: 33,33,33;
+    --v-theme-surface-overlay-multiplier: 1;
+    --v-theme-surface-bright: 204,191,214;
+    --v-theme-surface-bright-overlay-multiplier: 2;
+    --v-theme-surface-light: 66,66,66;
+    --v-theme-surface-light-overlay-multiplier: 1;
+    --v-theme-surface-variant: 200,200,200;
+    --v-theme-surface-variant-overlay-multiplier: 2;
+    --v-theme-on-surface-variant: 0,0,0;
+    --v-theme-primary: 33,150,243;
+    --v-theme-primary-overlay-multiplier: 2;
+    --v-theme-primary-darken-1: 39,124,193;
+    --v-theme-primary-darken-1-overlay-multiplier: 2;
+    --v-theme-secondary: 84,182,178;
+    --v-theme-secondary-overlay-multiplier: 2;
+    --v-theme-secondary-darken-1: 72,169,166;
+    --v-theme-secondary-darken-1-overlay-multiplier: 2;
+    --v-theme-error: 207,102,121;
+    --v-theme-error-overlay-multiplier: 2;
+    --v-theme-info: 33,150,243;
+    --v-theme-info-overlay-multiplier: 2;
+    --v-theme-success: 76,175,80;
+    --v-theme-success-overlay-multiplier: 2;
+    --v-theme-warning: 251,140,0;
+    --v-theme-warning-overlay-multiplier: 2;
+    --v-theme-on-background: 255,255,255;
+    --v-theme-on-surface: 255,255,255;
+    --v-theme-on-surface-bright: 0,0,0;
+    --v-theme-on-surface-light: 255,255,255;
+    --v-theme-on-primary: 255,255,255;
+    --v-theme-on-primary-darken-1: 255,255,255;
+    --v-theme-on-secondary: 255,255,255;
+    --v-theme-on-secondary-darken-1: 255,255,255;
+    --v-theme-on-error: 255,255,255;
+    --v-theme-on-info: 255,255,255;
+    --v-theme-on-success: 255,255,255;
+    --v-theme-on-warning: 255,255,255;
+    --v-border-color: 255, 255, 255;
+    --v-border-opacity: 0.12;
+    --v-shadow-color: 0, 0, 0;
+    --v-high-emphasis-opacity: 1;
+    --v-medium-emphasis-opacity: 0.7;
+    --v-disabled-opacity: 0.5;
+    --v-idle-opacity: 0.1;
+    --v-hover-opacity: 0.04;
+    --v-focus-opacity: 0.12;
+    --v-selected-opacity: 0.08;
+    --v-activated-opacity: 0.12;
+    --v-pressed-opacity: 0.16;
+    --v-dragged-opacity: 0.08;
+    --v-theme-kbd: 66, 66, 66;
+    --v-theme-on-kbd: 255, 255, 255;
+    --v-theme-code: 52, 52, 52;
+    --v-theme-on-code: 204, 204, 204;
+    --v-theme-on-dark: 255, 255, 255;
+    --v-theme-on-light: 0, 0, 0;
+    --v-elevation-overlay-color: white;
+    --v-elevation-overlay-opacity-step: 2%;
+  }
+  }
+  @layer theme-background {
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background));
+      color: rgb(var(--v-theme-on-background));
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface));
+      color: rgb(var(--v-theme-on-surface));
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright));
+      color: rgb(var(--v-theme-on-surface-bright));
+    }
+    .bg-surface-light {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-light));
+      color: rgb(var(--v-theme-on-surface-light));
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant));
+      color: rgb(var(--v-theme-on-surface-variant));
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary));
+      color: rgb(var(--v-theme-on-primary));
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1));
+      color: rgb(var(--v-theme-on-primary-darken-1));
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary));
+      color: rgb(var(--v-theme-on-secondary));
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1));
+      color: rgb(var(--v-theme-on-secondary-darken-1));
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error));
+      color: rgb(var(--v-theme-on-error));
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info));
+      color: rgb(var(--v-theme-on-info));
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success));
+      color: rgb(var(--v-theme-on-success));
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning));
+      color: rgb(var(--v-theme-on-warning));
+    }
+    .bg-accent {
+      --v-theme-overlay-multiplier: var(--v-theme-accent-overlay-multiplier);
+      background-color: rgb(var(--v-theme-accent));
+      color: rgb(var(--v-theme-on-accent));
+    }
+  }
+  @layer theme-foreground {
+    .text-background {
+      color: rgb(var(--v-theme-background));
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface));
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright));
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-light {
+      color: rgb(var(--v-theme-surface-light));
+    }
+    .border-surface-light {
+      --v-border-color: var(--v-theme-surface-light);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant));
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant));
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary));
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1));
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary));
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1));
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error));
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info));
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success));
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning));
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .text-accent {
+      color: rgb(var(--v-theme-accent));
+    }
+    .border-accent {
+      --v-border-color: var(--v-theme-accent);
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary));
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background));
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface));
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright));
+    }
+    .on-surface-light {
+      color: rgb(var(--v-theme-on-surface-light));
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1));
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary));
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1));
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error));
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info));
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success));
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning));
+    }
+    .on-accent {
+      color: rgb(var(--v-theme-on-accent));
+    }
+  }
+
+}</style><div id="__nuxt"><!--[--><div></div><div class="v-application v-theme--light v-layout v-layout--full-height v-locale--is-ltr" style=""><div class="v-application__wrap"><!--[--><!--[--><header class="v-toolbar v-toolbar--collapse-start v-toolbar--flat v-toolbar--density-default bg-surface border-b v-theme--light v-locale--is-ltr v-app-bar app-header px-2" style="top:0;z-index:1004;transform:translateY(0%);position:fixed;transition:none !important;" data-v-946da73e data-v-e8744c65><!----><!--[--><div class="v-toolbar__content" style="height:64px;"><!----><!----><!--[--><div class="v-toolbar-title header-title v-app-bar-title" style="" data-v-e8744c65><div class="v-toolbar-title__placeholder"><!----><!--[--><span class="store-name" data-v-e8744c65>Nova Store</span><!--]--></div></div><!--]--><div class="v-toolbar__append"><!--[--><button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default rounded-lg v-btn--size-large v-btn--variant-text cart-btn mr-1" style="" id="cart-btn" aria-label="Abrir carrito de compras" data-v-e8744c65><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--><div class="v-badge v-badge--floating" style="" data-v-e8744c65><div class="v-badge__wrapper"><!--[--><i class="mdi-cart-outline mdi v-icon notranslate v-theme--light text-grey-darken-1" style="font-size:26px;height:26px;width:26px;" aria-hidden="true" data-v-e8744c65></i><!--]--><span class="v-badge__badge v-theme--light bg-accent" style="bottom:calc(100% - 4px);left:calc(100% - 4px);display:none;" aria-atomic="true" aria-label="Badge" aria-live="polite" role="status">0</span></div></div><!--]--><!--]--></span><!----><!----></button><!--]--></div></div><!--]--><!--[--><!----><!--]--></header><!--[--><nav class="v-navigation-drawer v-navigation-drawer--right v-navigation-drawer--temporary v-theme--light v-navigation-drawer--mobile cart-drawer" style="right:0;z-index:1004;transform:translateX(401px);position:fixed;transition:none !important;" inert data-v-292de849 data-v-946da73e><!----><!----><div class="v-navigation-drawer__content"><!--[--><div class="drawer-header" data-v-292de849><div class="drawer-title" data-v-292de849><i class="mdi-cart mdi v-icon notranslate v-theme--light v-icon--size-default text-primary mr-2" style="" aria-hidden="true" data-v-292de849></i><span data-v-292de849>Tu carrito</span><!----></div><button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-text" style="" aria-label="Cerrar carrito" data-v-292de849><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--><i class="mdi-close mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true" data-v-292de849></i><!--]--><!--]--></span><!----><!----></button></div><hr class="v-divider v-theme--light" style="border-style:solid;" aria-orientation="horizontal" role="separator" data-v-292de849><div class="empty-cart" data-v-292de849><i class="mdi-cart-outline mdi v-icon notranslate v-theme--light text-grey-lighten-1 empty-icon" style="font-size:64px;height:64px;width:64px;" aria-hidden="true" data-v-292de849></i><p class="empty-title" data-v-292de849>Tu carrito está vacío</p><p class="empty-subtitle" data-v-292de849>Agrega productos para comenzar</p><button type="button" class="v-btn v-theme--light text-primary v-btn--density-default rounded-lg v-btn--size-default v-btn--variant-tonal mt-4" style="" data-v-292de849><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--> Explorar productos <!--]--><!--]--></span><!----><!----></button></div><!----><!--]--></div><!----></nav><!----><!--]--><main class="v-main main-bg" style="--v-layout-left:0px;--v-layout-right:0px;--v-layout-top:0px;--v-layout-bottom:0px;transition:none !important;" data-v-946da73e><!--[--><div class="v-container v-locale--is-ltr py-10 px-4" style="max-width:1200px;" data-v-946da73e><div class="hero mb-10" data-v-946da73e><p class="hero-eyebrow" data-v-946da73e>Nuevos productos</p><h1 class="hero-title" data-v-946da73e>Descubre nuestra colección</h1><p class="hero-subtitle" data-v-946da73e> Calidad premium a precios accesibles. Envío gratis en todos los pedidos. </p></div><div class="filters mb-8" data-v-946da73e><div class="v-slide-group v-slide-group--mobile v-chip-group v-theme--light" style="" tabindex="0" data-v-946da73e><!----><div class="v-slide-group__container"><div class="v-slide-group__content"><!--[--><!--[--><!--[--><span tabindex="0" class="v-chip v-chip--link v-theme--light text-primary v-chip--density-default rounded-lg v-chip--size-small v-chip--variant-tonal filter-active" style="" draggable="false" data-v-946da73e><!--[--><span class="v-chip__overlay"></span><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[-->Todo<!--]--></div><!----><!----></span><span tabindex="0" class="v-chip v-chip--link v-theme--light v-chip--density-default rounded-lg v-chip--size-small v-chip--variant-tonal" style="" draggable="false" data-v-946da73e><!--[--><span class="v-chip__overlay"></span><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[-->Electrónica<!--]--></div><!----><!----></span><span tabindex="0" class="v-chip v-chip--link v-theme--light v-chip--density-default rounded-lg v-chip--size-small v-chip--variant-tonal" style="" draggable="false" data-v-946da73e><!--[--><span class="v-chip__overlay"></span><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[-->Moda<!--]--></div><!----><!----></span><span tabindex="0" class="v-chip v-chip--link v-theme--light v-chip--density-default rounded-lg v-chip--size-small v-chip--variant-tonal" style="" draggable="false" data-v-946da73e><!--[--><span class="v-chip__overlay"></span><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[-->Hogar<!--]--></div><!----><!----></span><span tabindex="0" class="v-chip v-chip--link v-theme--light v-chip--density-default rounded-lg v-chip--size-small v-chip--variant-tonal" style="" draggable="false" data-v-946da73e><!--[--><span class="v-chip__overlay"></span><span class="v-chip__underlay"></span><!--]--><!----><!----><div class="v-chip__content" data-no-activator><!--[-->Deporte<!--]--></div><!----><!----></span><!--]--><!--]--><!--]--></div></div><!----></div></div><div class="v-row v-row--density-default" style="" data-v-946da73e><!--[--><div class="v-col v-col--cols-sm-6 v-col--cols-md-4 v-col--cols-lg-3 v-col--cols-12" style="" data-v-946da73e><div class="v-card v-theme--light v-card--density-default elevation-0 rounded-xl v-card--variant-elevated product-card" style="" id="product-1" data-v-946da73e data-v-cfb8efbc><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-responsive v-img v-img--booting" style="height:220px;" aria-label="Auriculares Pro Max" role="img" data-v-cfb8efbc><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><div class="v-card-text card-body" style="" data-v-cfb8efbc><div class="product-meta" data-v-cfb8efbc><p class="product-name" data-v-cfb8efbc>Auriculares Pro Max</p><p class="product-description" data-v-cfb8efbc>Sonido envolvente con cancelación de ruido activa</p></div><div class="card-footer" data-v-cfb8efbc><span class="product-price" data-v-cfb8efbc>$ 369.000</span><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-elevated add-btn" style="" id="add-to-cart-1" aria-label="Agregar Auriculares Pro Max al carrito" data-v-cfb8efbc><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><span class="v-btn__prepend"><i class="mdi-cart-plus mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><span class="v-btn__content" data-no-activator><!--[--><!--[-->Agregar<!--]--><!--]--></span><!----><!----></button></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col v-col--cols-sm-6 v-col--cols-md-4 v-col--cols-lg-3 v-col--cols-12" style="" data-v-946da73e><div class="v-card v-theme--light v-card--density-default elevation-0 rounded-xl v-card--variant-elevated product-card" style="" id="product-2" data-v-946da73e data-v-cfb8efbc><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-responsive v-img v-img--booting" style="height:220px;" aria-label="Smartwatch Series X" role="img" data-v-cfb8efbc><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><div class="v-card-text card-body" style="" data-v-cfb8efbc><div class="product-meta" data-v-cfb8efbc><p class="product-name" data-v-cfb8efbc>Smartwatch Series X</p><p class="product-description" data-v-cfb8efbc>Monitoreo de salud y GPS integrado</p></div><div class="card-footer" data-v-cfb8efbc><span class="product-price" data-v-cfb8efbc>$ 529.000</span><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-elevated add-btn" style="" id="add-to-cart-2" aria-label="Agregar Smartwatch Series X al carrito" data-v-cfb8efbc><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><span class="v-btn__prepend"><i class="mdi-cart-plus mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><span class="v-btn__content" data-no-activator><!--[--><!--[-->Agregar<!--]--><!--]--></span><!----><!----></button></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col v-col--cols-sm-6 v-col--cols-md-4 v-col--cols-lg-3 v-col--cols-12" style="" data-v-946da73e><div class="v-card v-theme--light v-card--density-default elevation-0 rounded-xl v-card--variant-elevated product-card" style="" id="product-3" data-v-946da73e data-v-cfb8efbc><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-responsive v-img v-img--booting" style="height:220px;" aria-label="Mochila Urban Explorer" role="img" data-v-cfb8efbc><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><div class="v-card-text card-body" style="" data-v-cfb8efbc><div class="product-meta" data-v-cfb8efbc><p class="product-name" data-v-cfb8efbc>Mochila Urban Explorer</p><p class="product-description" data-v-cfb8efbc>Resistente al agua con puerto USB</p></div><div class="card-footer" data-v-cfb8efbc><span class="product-price" data-v-cfb8efbc>$ 224.000</span><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-elevated add-btn" style="" id="add-to-cart-3" aria-label="Agregar Mochila Urban Explorer al carrito" data-v-cfb8efbc><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><span class="v-btn__prepend"><i class="mdi-cart-plus mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><span class="v-btn__content" data-no-activator><!--[--><!--[-->Agregar<!--]--><!--]--></span><!----><!----></button></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col v-col--cols-sm-6 v-col--cols-md-4 v-col--cols-lg-3 v-col--cols-12" style="" data-v-946da73e><div class="v-card v-theme--light v-card--density-default elevation-0 rounded-xl v-card--variant-elevated product-card" style="" id="product-4" data-v-946da73e data-v-cfb8efbc><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-responsive v-img v-img--booting" style="height:220px;" aria-label="Lámpara de Escritorio LED" role="img" data-v-cfb8efbc><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><div class="v-card-text card-body" style="" data-v-cfb8efbc><div class="product-meta" data-v-cfb8efbc><p class="product-name" data-v-cfb8efbc>Lámpara de Escritorio LED</p><p class="product-description" data-v-cfb8efbc>Luz regulable con puerto de carga</p></div><div class="card-footer" data-v-cfb8efbc><span class="product-price" data-v-cfb8efbc>$ 172.000</span><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-elevated add-btn" style="" id="add-to-cart-4" aria-label="Agregar Lámpara de Escritorio LED al carrito" data-v-cfb8efbc><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><span class="v-btn__prepend"><i class="mdi-cart-plus mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><span class="v-btn__content" data-no-activator><!--[--><!--[-->Agregar<!--]--><!--]--></span><!----><!----></button></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col v-col--cols-sm-6 v-col--cols-md-4 v-col--cols-lg-3 v-col--cols-12" style="" data-v-946da73e><div class="v-card v-theme--light v-card--density-default elevation-0 rounded-xl v-card--variant-elevated product-card" style="" id="product-5" data-v-946da73e data-v-cfb8efbc><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-responsive v-img v-img--booting" style="height:220px;" aria-label="Botella Térmica 1L" role="img" data-v-cfb8efbc><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><div class="v-card-text card-body" style="" data-v-cfb8efbc><div class="product-meta" data-v-cfb8efbc><p class="product-name" data-v-cfb8efbc>Botella Térmica 1L</p><p class="product-description" data-v-cfb8efbc>Mantiene temperatura 24 horas</p></div><div class="card-footer" data-v-cfb8efbc><span class="product-price" data-v-cfb8efbc>$ 119.000</span><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-elevated add-btn" style="" id="add-to-cart-5" aria-label="Agregar Botella Térmica 1L al carrito" data-v-cfb8efbc><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><span class="v-btn__prepend"><i class="mdi-cart-plus mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><span class="v-btn__content" data-no-activator><!--[--><!--[-->Agregar<!--]--><!--]--></span><!----><!----></button></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col v-col--cols-sm-6 v-col--cols-md-4 v-col--cols-lg-3 v-col--cols-12" style="" data-v-946da73e><div class="v-card v-theme--light v-card--density-default elevation-0 rounded-xl v-card--variant-elevated product-card" style="" id="product-6" data-v-946da73e data-v-cfb8efbc><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-responsive v-img v-img--booting" style="height:220px;" aria-label="Zapatillas Runner Pro" role="img" data-v-cfb8efbc><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><div class="v-card-text card-body" style="" data-v-cfb8efbc><div class="product-meta" data-v-cfb8efbc><p class="product-name" data-v-cfb8efbc>Zapatillas Runner Pro</p><p class="product-description" data-v-cfb8efbc>Suela amortiguadora para largas distancias</p></div><div class="card-footer" data-v-cfb8efbc><span class="product-price" data-v-cfb8efbc>$ 390.000</span><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-elevated add-btn" style="" id="add-to-cart-6" aria-label="Agregar Zapatillas Runner Pro al carrito" data-v-cfb8efbc><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><span class="v-btn__prepend"><i class="mdi-cart-plus mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><span class="v-btn__content" data-no-activator><!--[--><!--[-->Agregar<!--]--><!--]--></span><!----><!----></button></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col v-col--cols-sm-6 v-col--cols-md-4 v-col--cols-lg-3 v-col--cols-12" style="" data-v-946da73e><div class="v-card v-theme--light v-card--density-default elevation-0 rounded-xl v-card--variant-elevated product-card" style="" id="product-7" data-v-946da73e data-v-cfb8efbc><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-responsive v-img v-img--booting" style="height:220px;" aria-label="Cámara Instantánea" role="img" data-v-cfb8efbc><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><div class="v-card-text card-body" style="" data-v-cfb8efbc><div class="product-meta" data-v-cfb8efbc><p class="product-name" data-v-cfb8efbc>Cámara Instantánea</p><p class="product-description" data-v-cfb8efbc>Imprime fotos en segundos</p></div><div class="card-footer" data-v-cfb8efbc><span class="product-price" data-v-cfb8efbc>$ 304.000</span><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-elevated add-btn" style="" id="add-to-cart-7" aria-label="Agregar Cámara Instantánea al carrito" data-v-cfb8efbc><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><span class="v-btn__prepend"><i class="mdi-cart-plus mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><span class="v-btn__content" data-no-activator><!--[--><!--[-->Agregar<!--]--><!--]--></span><!----><!----></button></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div class="v-col v-col--cols-sm-6 v-col--cols-md-4 v-col--cols-lg-3 v-col--cols-12" style="" data-v-946da73e><div class="v-card v-theme--light v-card--density-default elevation-0 rounded-xl v-card--variant-elevated product-card" style="" id="product-8" data-v-946da73e data-v-cfb8efbc><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-responsive v-img v-img--booting" style="height:220px;" aria-label="Planta Suculenta Set" role="img" data-v-cfb8efbc><div class="v-responsive__sizer" style=""></div><!--[--><!--[--><!----><!----><!----><!----><!----><!--]--><!--]--><!----></div><div class="v-card-text card-body" style="" data-v-cfb8efbc><div class="product-meta" data-v-cfb8efbc><p class="product-name" data-v-cfb8efbc>Planta Suculenta Set</p><p class="product-description" data-v-cfb8efbc>Pack de 3 plantas decorativas</p></div><div class="card-footer" data-v-cfb8efbc><span class="product-price" data-v-cfb8efbc>$ 82.000</span><button type="button" class="v-btn v-btn--elevated v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-small v-btn--variant-elevated add-btn" style="" id="add-to-cart-8" aria-label="Agregar Planta Suculenta Set al carrito" data-v-cfb8efbc><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><span class="v-btn__prepend"><i class="mdi-cart-plus mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><span class="v-btn__content" data-no-activator><!--[--><!--[-->Agregar<!--]--><!--]--></span><!----><!----></button></div></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><!--]--></div></div><!--]--></main><!--]--><!--]--></div></div><!--]--></div><div id="teleports"></div><script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/NOMBRE-DEL-REPO/",buildId:"cadc889e-8016-4086-a8e4-2a923e0bc8d2",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/NOMBRE-DEL-REPO/_payload.json?cadc889e-8016-4086-a8e4-2a923e0bc8d2">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{},true,"\u002F",1777678186159]</script></body></html>
