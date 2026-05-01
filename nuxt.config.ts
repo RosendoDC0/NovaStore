@@ -1,11 +1,16 @@
 export default defineNuxtConfig({
   app: {
-    baseURL: '/NovaStore/',
-    buildAssetsDir: 'assets'
+    baseURL: '/NovaStore/'
   },
 
   nitro: {
     preset: 'github_pages'
+  },
+
+  css: ['vuetify/lib/styles/main.sass'],
+
+  build: {
+    transpile: ['vuetify']
   },
 
   compatibilityDate: '2025-07-15',
@@ -14,13 +19,11 @@ export default defineNuxtConfig({
   modules: ['vuetify-nuxt-module'],
 
   vuetify: {
-    moduleOptions: {},
     vuetifyOptions: {
       theme: {
         defaultTheme: 'light',
         themes: {
           light: {
-            dark: false,
             colors: {
               primary: '#5C6BC0',
               secondary: '#7E57C2',
@@ -31,10 +34,6 @@ export default defineNuxtConfig({
             },
           },
         },
-      },
-      defaults: {
-        VCard: { rounded: 'xl', elevation: 0 },
-        VBtn: { rounded: 'lg' },
       },
     },
   },
