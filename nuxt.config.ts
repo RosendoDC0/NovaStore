@@ -1,20 +1,20 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: '/NovaStore/'
+    baseURL: '/NovaStore/',
+    buildAssetsDir: 'assets'
   },
+
   nitro: {
     preset: 'github_pages'
   },
+
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
   modules: ['vuetify-nuxt-module'],
 
   vuetify: {
-    moduleOptions: {
-      /* treeshaking: true */
-    },
+    moduleOptions: {},
     vuetifyOptions: {
       theme: {
         defaultTheme: 'light',
