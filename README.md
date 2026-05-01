@@ -1,3 +1,8 @@
+# INTEGRANTES: 
+### 1. Rosendo De Castro
+### 2. Daniela Barón
+### 3. Maicol Pereira
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
