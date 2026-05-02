@@ -14,5 +14,10 @@
     "vue": "^3.5.33",
     "vue-router": "^5.0.6",
     "vuetify-nuxt-module": "^0.19.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "sass": "^1.99.0",
+    "sass-embedded": "^1.99.0"
   }
 }

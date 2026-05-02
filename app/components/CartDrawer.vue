@@ -26,15 +26,6 @@
       <v-icon class="empty-icon" size="64" color="grey-lighten-1">mdi-cart-outline</v-icon>
       <p class="empty-title">Tu carrito está vacío</p>
       <p class="empty-subtitle">Agrega productos para comenzar</p>
-      <v-btn
-        color="primary"
-        variant="tonal"
-        rounded="lg"
-        class="mt-4"
-        @click="isOpen = false"
-      >
-        Explorar productos
-      </v-btn>
     </div>
 
     <div v-else class="items-scroll">

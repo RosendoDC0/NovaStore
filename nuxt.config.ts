@@ -1,6 +1,19 @@
 export default defineNuxtConfig({
   app: {
-    baseURL: '/NovaStore/'
+    baseURL: process.env.NODE_ENV === "production"
+      ? "/NovaStore/"
+      : "/",
+    head: {
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: process.env.NODE_ENV === 'production'
+            ? '/NovaStore/favicon.ico'
+            : '/favicon.ico'
+        }
+      ]
+    }
   },
 
   nitro: {
