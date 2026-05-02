@@ -23,9 +23,7 @@
     <v-divider />
 
     <div v-if="cartItems.length === 0" class="empty-cart">
-      <v-icon class="empty-icon" size="64" color="grey-lighten-1">mdi-cart-outline</v-icon>
       <p class="empty-title">Tu carrito está vacío</p>
-      <p class="empty-subtitle">Agrega productos para comenzar</p>
     </div>
 
     <div v-else class="items-scroll">
@@ -114,20 +112,10 @@ const { cartItems, cartCount, cartTotal, clearCart } = useCart()
   text-align: center;
 }
 
-.empty-icon {
-  margin-bottom: 20px;
-}
-
 .empty-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #1a1a2e;
-  margin: 0 0 8px;
-}
-
-.empty-subtitle {
-  font-size: 0.875rem;
-  color: #888;
   margin: 0;
 }
 
